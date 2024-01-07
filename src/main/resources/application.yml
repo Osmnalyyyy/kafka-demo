@@ -1,0 +1,13 @@
+server:
+  port: 8989
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kafka
+    username: kafka
+    password: kafka
+  jpa:
+    hibernate:
+      ddl-auto: update
+  config:
+    import: classpath:kafka.yml
